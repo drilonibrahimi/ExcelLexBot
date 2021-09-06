@@ -13,14 +13,14 @@ Metadata:
   AWS::ServerlessRepo::Application:
     Name: ExcelLexBot
     Description: ExcelLexBot is a serverless application that converts an Excel file (xlsx) in predefined format into an Amazon Lex chatbot. 
-    Author: Cyrus Wong
+    Author: Drilon Techframe
     SpdxLicenseId: Apache-2.0
     LicenseUrl: LICENSE.txt
     ReadmeUrl: README.md
     Labels: ['Lex']
-    HomePageUrl: https://github.com/wongcyrus/ExcelLexBot
-    SemanticVersion: 0.0.3
-    SourceCodeUrl: https://github.com/wongcyrus/ExcelLexBot   
+    HomePageUrl: https://github.com/drilonibrahimi/ExcelLexBot
+    SemanticVersion: 0.0.5
+    SourceCodeUrl: https://github.com/drilonibrahimi/ExcelLexBot
 Resources:
   ExcelLexBotS3TriggerFunction:
     Type: AWS::Serverless::Function
