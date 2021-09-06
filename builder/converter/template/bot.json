@@ -11,7 +11,7 @@
     {%- endif %}
     {% endfor %}
   ],
-  "locale": "en-US",
+  "locale": "de-DE",
   "abortStatement": {
     "messages": [
       {
