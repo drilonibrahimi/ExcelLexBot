@@ -20,7 +20,7 @@ class BotBuilder:
         self.botJConverter = BotJsonConverter(workbook, output_dir)
         self.output_dir = output_dir
         self.lambda_arn_prefix = lambda_arn_prefix
-        self.client = boto3.client('lex-models', region_name='us-east-2')
+        self.client = boto3.client('lex-models', region_name='eu-central-1')
 
     def __build_lex_component(self, name: str, func):
         with open(os.path.join(self.output_dir, name + ".json"), 'r') as f:
@@ -85,7 +85,7 @@ if __name__ == "__main__":
     bot_builder1 = BotBuilder(
         os.path.join("../playground", "ChatBot.xlsx"),
         os.path.join("../", "output"),
-        " arn:aws:lambda:us-east-2:449352757360:function:")
+        " arn:aws:lambda:eu-central-1:449352757360:function:")
     bot_builder1.generate_cloudformation_resources()
     # bot_builder1.deploy_bot()
     # time.sleep(10)

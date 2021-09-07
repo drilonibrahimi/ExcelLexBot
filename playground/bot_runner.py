@@ -1,7 +1,7 @@
 import boto3
 import json
 
-client = boto3.client('lex-runtime', region_name='us-east-2')
+client = boto3.client('lex-runtime', region_name='eu-central-1')
 
 response = client.post_text(
     botName='ScheduleAppointmentBot',

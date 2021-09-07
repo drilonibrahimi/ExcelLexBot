@@ -1,10 +1,10 @@
 export STACK_NAME=excellexbotTechFrame
-export AWS_DEFAULT_REGION=us-east-2
+export AWS_DEFAULT_REGION=eu-central-1
 export REGION=$AWS_DEFAULT_REGION
 
 echo "Deploy $STACK_NAME stack at $REGION region"
 
-sourcebucket=sam-repo
+sourcebucket=drilon-sam-repo
 
 aws s3 mb s3://$sourcebucket --region $REGION 
 rm excellexbotpackage.yaml
@@ -14,7 +14,7 @@ sam package --template-file excellexbot.yaml --s3-bucket $sourcebucket --output-
 # --region $REGION --capabilities CAPABILITY_IAM \
 # --parameter-overrides DynamodbAutoScaling=false
 
-sam publish --template excellexbotpackage.yaml --region us-east-2
+sam publish --template excellexbotpackage.yaml --region eu-central-1
 
 # uncomment the following if you want to deploy the codehook example project.
 # rm codehookpackage.yaml                     
