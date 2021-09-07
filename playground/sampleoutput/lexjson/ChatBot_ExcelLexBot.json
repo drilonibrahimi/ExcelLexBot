@@ -29,7 +29,7 @@
             }
         ]
     },
-    "voiceId": "Salli",
+    "voiceId": "Hans",
     "childDirected": false,
     "idleSessionTTLInSeconds": 600
 }
