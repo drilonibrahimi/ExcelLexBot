@@ -11,7 +11,7 @@ Parameters:
     Description: Enable DynamoDB AutoScaling
 Metadata:
   AWS::ServerlessRepo::Application:
-    Name: ExcelLexBot
+    Name: ExcelLexBotTechFrame
     Description: ExcelLexBot is a serverless application that converts an Excel file (xlsx) in predefined format into an Amazon Lex chatbot. 
     Author: Drilon Techframe
     SpdxLicenseId: Apache-2.0
@@ -19,7 +19,7 @@ Metadata:
     ReadmeUrl: README.md
     Labels: ['Lex']
     HomePageUrl: https://github.com/drilonibrahimi/ExcelLexBot
-    SemanticVersion: 0.0.5
+    SemanticVersion: 0.0.8
     SourceCodeUrl: https://github.com/drilonibrahimi/ExcelLexBot
 Resources:
   ExcelLexBotS3TriggerFunction:
