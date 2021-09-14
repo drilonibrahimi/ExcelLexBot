@@ -42,8 +42,11 @@ def lambda_handler(event, context):
             return delegate(output_session_attributes, slots)
         elif source == 'FulfillmentCodeHook':
             return close(output_session_attributes, 'Fulfilled', {
-                'contentType': 'PlainText',
-                'content': 'Okay!'
+                #  Muted lexbot response
+                'contentType': 'SSML',
+                'content': 'test'
+                # 'contentType': 'PlainText',
+                # 'content': 'Okay!'
             })
     else:
         # get Code Hook response.
